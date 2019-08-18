@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/me.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="backdrop" onclick="closeSideNav()"></div>
+  <header>
+    <nav class="nav">
+      <img src="/icons/hamburger.svg" alt="hamburger menu" class="nav__hamburger" onclick="openSideNav()">
+      <div class="nav__left">
+        <a class="nav__link nav__link--main" href="./index.html">CARLOS M</a>
+      </div>
+      <div class="nav__right">
+        <a class="nav__link nav__link--selected" href="./index.html">Me</a>
+        <a class="nav__link" href="./pages/projects.html">Projects</a>
+        <a class="nav__link" href="./pages/skills.html">Skills</a>
+      </div>
+    </nav>
+  </header>
+  <aside class="sideNav">
+    <div class="sideNav__list">
+        <a class="sideNav__link sideNav__link--selected" href="./index.html">Me</a>
+        <a class="sideNav__link" href="/pages/projects.html">Projects</a>
+        <a class="sideNav__link" href="/pages/skills.html">Skills</a>
+    </div>
+  </aside>
+  <main class="main">
+    <h1 class="main__title">About me</h1>
+    <div class="main__imgContainer">
+      <img class="main__img main__img--1" src="images/cmCityU.png">
+      <img class="main__img main__img--2 main__img--gone" src="images/cmComputer.png">
+    </div>
+    <div class="me">
+      <div class="me__cardContainer">
+        <div class="me__card">
+          <h2 class="me__title">Me</h2>
+        </div>
+        <div class="me__card me__card--sub">
+          <ul class="me__list">
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">I consider myself a very determined person!</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Love learning, specially about technology and science</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Good at math and programming, but struggle with design</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Love memes</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Problem solver: if something is very challenging I'm attracted to that</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Love cold, hate hot but come from the hell itself (Barrancabermeja)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="me__cardContainer">
+        <div class="me__card">
+          <h2 class="me__title">Education</h2>
+        </div>
+        <div class="me__card me__card--sub">
+          <ul class="me__list">
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Made my Kindergarten in Chester Palmer (Barrancabermeja)</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Studied 11 years in Colegio El Rosario (Barrancabermeja). Here I learned about
+                lots of things and became prepared for the Icfes and University</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">I started University at Universidad de los Andes (Bogotá) at 17 years old. I
+                started with Electronic Engineering</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">In 3rd semeter (18 years old) I started studying also Systems and Computing
+                Enginerring</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">I love both carreers, and I would love to be able to work in both of them</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="me__cardContainer">
+        <div class="me__card">
+          <h2 class="me__title">Hobbies</h2>
+        </div>
+        <div class="me__card me__card--sub">
+          <ul class="me__list">
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Youtube (maybe a little too much)</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Videogames</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Solving puzzles related with logic or numbers</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Learning new things</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Browsing facebook and twitter</p>
+            </li>
+            <li class="me__item">
+              <p class="me__check">&#x2713;</p>
+              <p class="me__description">Listen people telling something interesting</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__left">
+      <a href="https://www.facebook.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="/icons/facebook.svg" alt="facebook icon" class="footer__icon">
+      </a>
+      <a href="https://twitter.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="/icons/twitter.svg" alt="twitter icon" class="footer__icon">
+      </a>
+      <a href="https://github.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="/icons/github.svg" alt="github icon" class="footer__icon">
+      </a>
+    </div>
+    <div class="footer__right">
+      <p class="footer__text">Credits: Abster font found in <a class="footer__link"
+          href="https://unblast.com/abster-free-font">https://unblast.com/abster-free-font/</a></p>
+      <p class="footer__text">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          class="footer__link" target="_blank">Freepik</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon" class="footer__link">www.flaticon.com</a> is licensed
+        by
+        <a class="footer__link" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+          target="_blank">CC 3.0 BY</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/me.js"></script>
+</html>

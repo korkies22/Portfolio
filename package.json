@@ -1,0 +1,25 @@
+{
+  "name": "cm-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for web develpment course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korkies22/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "korkies22",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/korkies22/Portfolio/issues"
+  },
+  "homepage": "https://github.com/korkies22/Portfolio#readme"
+}

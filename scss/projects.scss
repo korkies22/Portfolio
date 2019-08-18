@@ -1,0 +1,125 @@
+.projects {
+  width: 60%;
+  border-radius: 20px;
+  min-height: 75vh;
+  background: #252526;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flex;
+
+  
+  @media (max-width: 1100px) {
+    width: 80%;
+  }
+
+  @media (max-width: 860px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  @media (max-width: 600px) {
+    width: 95%;
+  }
+
+  &__container {
+    transition: all 0.3s ease-in;
+  }
+
+  &__folderIcon {
+    width: 3rem;
+    margin-right: 1rem;
+
+    &--systemsOpen {
+      display: none;
+    }
+
+    &--electronicsOpen {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin: 0.2rem 0;
+    cursor: pointer;
+  }
+
+  &__nameContainer {
+    display: flex;
+    align-items: center;
+    width: 12rem;
+    cursor: pointer;
+    background: #252526;
+  }
+
+  &__list {
+    transition: all 0.25s ease-out;
+    overflow: hidden;
+    max-height: 0;
+
+    &--systems {
+      p {
+        &:hover {
+          color: #42a5f5;
+        }
+      }
+    }
+
+    &--electronics {
+      p {
+        &:hover {
+          color: #009688;
+        }
+      }
+    }
+  }
+}
+
+.project {
+  opacity: 0;
+  transition: all 0.4s ease-in;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 860px) {
+    padding:0.5rem;
+  }
+
+  &__img {
+    max-width: 25rem;
+    margin: 1rem auto;
+    display: block;
+    max-height: 15rem;
+
+    @media (max-width: 780px) {
+      max-width: 20rem;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__link {
+    cursor: pointer;
+    color: #8a8aea;
+    max-width: 25rem;
+    word-wrap: break-word;
+
+    @media (max-width: 780px) {
+      max-width: 20rem;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.projects {
+  width: 60%;
+  border-radius: 20px;
+  min-height: 75vh;
+  background: #252526;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1100px) {
+  .projects {
+    width: 80%;
+  }
+}
+
+@media (max-width: 860px) {
+  .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    width: 95%;
+  }
+}
+
+.projects__container {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.projects__folderIcon {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.projects__folderIcon--systemsOpen {
+  display: none;
+}
+
+.projects__folderIcon--electronicsOpen {
+  display: none;
+}
+
+.projects__item {
+  margin: 0.2rem 0;
+  cursor: pointer;
+}
+
+.projects__nameContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12rem;
+  cursor: pointer;
+  background: #252526;
+}
+
+.projects__list {
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.projects__list--systems p:hover {
+  color: #42a5f5;
+}
+
+.projects__list--electronics p:hover {
+  color: #009688;
+}
+
+.project {
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 860px) {
+  .project {
+    padding: 0.5rem;
+  }
+}
+
+.project__img {
+  max-width: 25rem;
+  margin: 1rem auto;
+  display: block;
+  max-height: 15rem;
+}
+
+@media (max-width: 780px) {
+  .project__img {
+    max-width: 20rem;
+  }
+}
+
+.project__name {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project__description {
+  text-align: center;
+}
+
+.project__link {
+  cursor: pointer;
+  color: #8a8aea;
+  max-width: 25rem;
+  word-wrap: break-word;
+}
+
+@media (max-width: 780px) {
+  .project__link {
+    max-width: 20rem;
+  }
+}
+/*# sourceMappingURL=projects.css.map */
