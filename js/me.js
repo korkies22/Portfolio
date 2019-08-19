@@ -12,8 +12,7 @@ img1.onload = function() {
   }, 750);
 
   //Shows second image
-setTimeout(() => {
-  img2.classList.toggle("main__img--gone");
-}, 1250);
+  setTimeout(() => {
+    img2.classList.toggle("main__img--gone");
+  }, 1250);
 };
-
