@@ -96,36 +96,6 @@ a {
   cursor: pointer;
 }
 
-.main {
-  width: 100%;
-}
-
-.main__img {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  height: 50vh;
-  border-radius: 10%;
-  display: block;
-  margin: 0 auto;
-}
-
-.main__img--gone {
-  height: 0;
-}
-
-.main__imgContainer {
-  height: 50vh;
-}
-
-.main__title {
-  text-transform: uppercase;
-  color: #071a46;
-  font-family: 'Exodar', sans-serif;
-  text-align: center;
-  margin: 1rem 0;
-  font-size: 2.5rem;
-}
-
 .nav {
   background: #071a46;
   display: -webkit-box;

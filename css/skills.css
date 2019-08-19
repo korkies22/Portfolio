@@ -1,0 +1,128 @@
+.carousel {
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.carousel__options {
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+.carousel__button {
+  background: #36797d;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.cell {
+  cursor: pointer;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #071a46;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.cell__img {
+  max-width: calc(300px - 2rem);
+  max-height: calc(300px - 5rem);
+  display: block;
+}
+
+.cell__link {
+  display: inline-block;
+  height: calc(300px - 2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cell__title {
+  color: #071a46;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.main {
+  width: 100%;
+}
+
+.main__title {
+  text-transform: uppercase;
+  color: #071a46;
+  font-family: 'Exodar', sans-serif;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.main__subtitle {
+  text-transform: uppercase;
+  color: #071a46;
+  text-align: center;
+}
+
+.scene {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-perspective: 1200px;
+          perspective: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  z-index: 1;
+}
+/*# sourceMappingURL=skills.css.map */

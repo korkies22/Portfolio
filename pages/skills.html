@@ -2,180 +2,213 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/skills.css">
+  <title>CM Portfolio</title>
+  <meta name="description" content="CM's portfolio to show his skills and technological habilities" />
+  <meta name="author" content="Carlos Mario Sarmiento Pinilla" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/ico" href="../images/favicon.ico">
+  <title>Document</title>
 </head>
 
 <body>
 
-    <div class="backdrop" onclick="closeSideNav()"></div>
-    <header>
-        <nav class="nav">
-            <img src="/icons/hamburger.svg" alt="hamburger menu" class="nav__hamburger" onclick="openSideNav()">
-            <div class="nav__left">
-                <a class="nav__link nav__link--main" href="../index.html">CARLOS M</a>
-            </div>
-            <div class="nav__right">
-                <a class="nav__link" href="../index.html">Me</a>
-                <a class="nav__link" href="./projects.html">Projects</a>
-                <a class="nav__link" href="./skills.html">Skills</a>
-            </div>
-        </nav>
-    </header>
-    <aside class="sideNav">
-        <div class="sideNav__list">
-            <a class="sideNav__link" href="../index.html">Me</a>
-            <a class="sideNav__link" href="./projects.html">Projects</a>
-            <a class="sideNav__link" href="./skills.html">Skills</a>
+  <!--Backdrop is used to close the side nav when mobile-->
+  <div class="backdrop"></div>
+  <!--Header and nav for navigation-->
+  <header>
+    <nav class="nav">
+      <img src="/icons/hamburger.svg" alt="hamburger menu" class="nav__hamburger">
+      <div class="nav__left">
+        <a class="nav__link nav__link--main" href="../index.html">CARLOS M</a>
+      </div>
+      <div class="nav__right">
+        <a class="nav__link" href="../index.html">Me</a>
+        <a class="nav__link" href="./projects.html">Projects</a>
+        <a class="nav__link nav__link--selected" href="./skills.html">Skills</a>
+      </div>
+    </nav>
+  </header>
+  <!--Side nav for mobile navigation-->
+  <aside class="sideNav">
+    <div class="sideNav__list">
+      <a class="sideNav__link" href="../index.html">Me</a>
+      <a class="sideNav__link" href="./projects.html">Projects</a>
+      <a class="sideNav__link sideNav__link--selected" href="./skills.html">Skills</a>
+    </div>
+  </aside>
+  <!--Main content of page-->
+  <main class="main">
+    <h1 class="main__title">My technological Skills</h1>
+    <h2 class="main__subtitle">Technologies I'm comfortable with</h2>
+
+    <!--First carousel-->
+    <div class="scene">
+      <div class="carousel carousel--1">
+        <div class="cell">
+          <h3 class="cell__title">VueJS</h3>
+          <a href="https://vuejs.org/" target="_blank" class="cell__link">
+            <img src="https://vuejs.org/images/logo.png" class="cell__img" alt="VueJS image" />
+          </a>
         </div>
-    </aside>
-    <main class="main">
-        <h1 class="main__title">About me</h1>
-        <div class="main__imgContainer">
-            <img class="main__img main__img--1" src="images/cmCityU.png">
-            <img class="main__img main__img--2 main__img--gone" src="images/cmComputer.png">
+        <div class="cell">
+          <h3 class="cell__title">Nuxt</h3>
+          <a href="https://nuxtjs.org/" target="_blank" class="cell__link">
+            <img src="https://i0.wp.com/blog.logrocket.com/wp-content/uploads/2019/05/nuxt.png?fit=500%2C383&ssl=1"
+              class="cell__img" alt="Nuxt image" />
+          </a>
         </div>
-        <div class="me">
-            <div class="me__cardContainer">
-                <div class="me__card">
-                    <h2 class="me__title">Me</h2>
-                </div>
-                <div class="me__card me__card--sub">
-                    <ul class="me__list">
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">I consider myself a very determined person!</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Love learning, specially about technology and science</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Good at math and programming, but struggle with design</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Love memes</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Problem solver: if something is very challenging I'm attracted to
-                                that</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Love cold, hate hot but come from the hell itself
-                                (Barrancabermeja)</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="me__cardContainer">
-                <div class="me__card">
-                    <h2 class="me__title">Education</h2>
-                </div>
-                <div class="me__card me__card--sub">
-                    <ul class="me__list">
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Made my Kindergarten in Chester Palmer (Barrancabermeja)</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Studied 11 years in Colegio El Rosario (Barrancabermeja). Here I
-                                learned about
-                                lots of things and became prepared for the Icfes and University</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">I started University at Universidad de los Andes (Bogotá) at 17
-                                years old. I
-                                started with Electronic Engineering</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">In 3rd semeter (18 years old) I started studying also Systems and
-                                Computing
-                                Enginerring</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">I love both carreers, and I would love to be able to work in both
-                                of them</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="me__cardContainer">
-                <div class="me__card">
-                    <h2 class="me__title">Hobbies</h2>
-                </div>
-                <div class="me__card me__card--sub">
-                    <ul class="me__list">
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Youtube (maybe a little too much)</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Videogames</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Solving puzzles related with logic or numbers</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Learning new things</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Browsing facebook and twitter</p>
-                        </li>
-                        <li class="me__item">
-                            <p class="me__check">&#x2713;</p>
-                            <p class="me__description">Listen people telling something interesting</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="cell">
+          <h3 class="cell__title">Flutter</h3>
+          <a href="https://flutter.dev" target="_blank" class="cell__link">
+            <img
+              src="https://venturebeat.com/wp-content/uploads/2019/02/google-flutter-logo-white.png?fit=400%2C200&strip=all"
+              class="cell__img" alt="Flutter image" />
+          </a>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__left">
-            <a href="https://www.facebook.com/korkies22" class="footer__icon--link" target="_blank">
-                <img src="/icons/facebook.svg" alt="facebook icon" class="footer__icon">
-            </a>
-            <a href="https://twitter.com/korkies22" class="footer__icon--link" target="_blank">
-                <img src="/icons/twitter.svg" alt="twitter icon" class="footer__icon">
-            </a>
-            <a href="https://github.com/korkies22" class="footer__icon--link" target="_blank">
-                <img src="/icons/github.svg" alt="github icon" class="footer__icon">
-            </a>
+        <div class="cell">
+          <h3 class="cell__title">Arduino</h3>
+          <a href="https://www.arduino.cc/" target="_blank" class="cell__link">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png"
+              class="cell__img" alt="Arduino image" />
+          </a>
         </div>
-        <div class="footer__right">
-            <p class="footer__text">Credits: Exodar font found in <a class="footer__link"
-                    href="https://creativetacos.com/exodar-sans-serif-font/">https://creativetacos.com/exodar-sans-serif-font/</a>
-            </p>
-            <p class="footer__text">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-                    class="footer__link" target="_blank">Freepik</a>
-                from <a href="https://www.flaticon.com/" title="Flaticon" class="footer__link">www.flaticon.com</a> is
-                licensed
-                by
-                <a class="footer__link" href="http://creativecommons.org/licenses/by/3.0/"
-                    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-            </p>
+
+      </div>
+      <div class="carousel__options">
+        <p>
+          <button class="carousel__button carousel__button--prev carousel__button--prev-1">Previous</button>
+          <button class="carousel__button carousel__button--next carousel__button--next-1">Next</button>
+        </p>
+      </div>
+    </div>
+
+    <h2 class="main__subtitle">Technologies I'm close to be good with</h2>
+    <!--Second carousel-->
+    <div class="scene">
+      <div class="carousel carousel--2">
+        <div class="cell">
+          <h3 class="cell__title">ReactJS</h3>
+          <a href="https://reactjs.org/" target="_blank" class="cell__link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png"
+              class="cell__img" alt="VueJS image" />
+          </a>
         </div>
-    </footer>
+        <div class="cell">
+          <h3 class="cell__title">MongoDB</h3>
+          <a href="https://www.mongodb.com/" target="_blank" class="cell__link">
+            <img src="https://i2.wp.com/soyprogramador.liz.mx/wp-content/uploads/2019/02/mongoDB.png?fit=332%2C341"
+              class="cell__img" alt="MongoDB image" />
+          </a>
+        </div>
+        <div class="cell">
+          <h3 class="cell__title">Git</h3>
+          <a href="https://git-scm.com/" target="_blank" class="cell__link">
+            <img src="https://vabadus.es/images/cache/imagen_nodo/images/articulos/5c9df0529d76e194347831.png"
+              class="cell__img" alt="Git image" />
+          </a>
+        </div>
+        <div class="cell">
+          <h3 class="cell__title">Verilog</h3>
+          <a href="https://en.wikipedia.org/wiki/Verilog" target="_blank" class="cell__link">
+            <img src="../images/verilog.png" class="cell__img" alt="Verilog image" />
+          </a>
+        </div>
+      </div>
+      <div class="carousel__options">
+        <p>
+          <button class="carousel__button carousel__button--prev carousel__button--prev-2">Previous</button>
+          <button class="carousel__button carousel__button--next carousel__button--next-2">Next</button>
+        </p>
+      </div>
+    </div>
+
+    <h2 class="main__subtitle">Technologicall skills I could improve</h2>
+    <!--Third carousel-->
+    <div class="scene">
+      <div class="carousel carousel--3">
+        <div class="cell">
+          <h3 class="cell__title">Angular</h3>
+          <a href="https://angular.io/" target="_blank" class="cell__link">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png"
+              class="cell__img" alt="Angular image" />
+          </a>
+        </div>
+        <div class="cell">
+          <h3 class="cell__title">Java</h3>
+          <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" class="cell__link">
+            <img src="https://i.blogs.es/6091fa/java/450_1000.jpg" class="cell__img" alt="Java image" />
+          </a>
+        </div>
+        <div class="cell">
+          <h3 class="cell__title">CI/CD</h3>
+          <a href="https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html"
+            target="_blank" class="cell__link">
+            <img src="https://dzone.com/storage/temp/7825454-screen-shot-2018-01-12-at-102231-am.png" class="cell__img"
+              alt="CI/CD image" />
+          </a>
+        </div>
+        <div class="cell">
+          <h3 class="cell__title">Adobe XD</h3>
+          <a href="https://www.adobe.com/la/products/xd.html" target="_blank" class="cell__link">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
+              class="cell__img" alt="XD image" />
+          </a>
+        </div>
+        <div class="cell">
+          <h3 class="cell__title">Adobe Illustrator</h3>
+          <a href="https://www.adobe.com/la/products/illustrator.html" target="_blank" class="cell__link">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41Z%2B%2BkG8p6L.jpg" class="cell__img"
+              alt="Illustrator image" />
+          </a>
+        </div>
+      </div>
+      <div class="carousel__options">
+        <p>
+          <button class="carousel__button carousel__button--prev carousel__button--prev-3">Previous</button>
+          <button class="carousel__button carousel__button--next carousel__button--next-3">Next</button>
+        </p>
+      </div>
+    </div>
+  </main>
+  <!--Footer for social links and copyright issues-->
+  <footer class="footer">
+    <div class="footer__left">
+      <a href="https://www.facebook.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="../icons/facebook.svg" alt="facebook icon" class="footer__icon">
+      </a>
+      <a href="https://twitter.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="../icons/twitter.svg" alt="twitter icon" class="footer__icon">
+      </a>
+      <a href="https://github.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="../icons/github.svg" alt="github icon" class="footer__icon">
+      </a>
+    </div>
+    <div class="footer__right">
+      <p class="footer__text">Credits: Exodar font found in <a class="footer__link"
+          href="https://creativetacos.com/exodar-sans-serif-font/">https://creativetacos.com/exodar-sans-serif-font/</a>
+      </p>
+      <p class="footer__text">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          class="footer__link" target="_blank">Freepik</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon" class="footer__link">www.flaticon.com</a> is
+        licensed
+        by
+        <a class="footer__link" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+          target="_blank">CC 3.0 BY</a>
+      </p>
+    </div>
+  </footer>
 </body>
 
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/projects.js"></script>
+<!--JS scripts-->
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/skills.js"></script>
 
 </html>

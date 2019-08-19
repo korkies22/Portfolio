@@ -6,17 +6,23 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/me.css">
+  <title>CM Portfolio</title>
+  <meta name="description" content="CM's portfolio to show his skills and technological habilities" />
+  <meta name="author" content="Carlos Mario Sarmiento Pinilla" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="./images/favicon.ico">
   <title>Document</title>
 </head>
 
 <body>
 
-  <div class="backdrop" onclick="closeSideNav()"></div>
+  <!--Backdrop is used to close the side nav when mobile-->
+  <div class="backdrop"></div>
+  <!--Header and nav for navigation-->
   <header>
     <nav class="nav">
-      <img src="/icons/hamburger.svg" alt="hamburger menu" class="nav__hamburger" onclick="openSideNav()">
+      <img src="/icons/hamburger.svg" alt="hamburger menu" class="nav__hamburger">
       <div class="nav__left">
         <a class="nav__link nav__link--main" href="./index.html">CARLOS M</a>
       </div>
@@ -27,13 +33,15 @@
       </div>
     </nav>
   </header>
+  <!--Side nav for mobile navigation-->
   <aside class="sideNav">
     <div class="sideNav__list">
-        <a class="sideNav__link sideNav__link--selected" href="./index.html">Me</a>
-        <a class="sideNav__link" href="/pages/projects.html">Projects</a>
-        <a class="sideNav__link" href="/pages/skills.html">Skills</a>
+      <a class="sideNav__link sideNav__link--selected" href="./index.html">Me</a>
+      <a class="sideNav__link" href="./pages/projects.html">Projects</a>
+      <a class="sideNav__link" href="./pages/skills.html">Skills</a>
     </div>
   </aside>
+  <!--Main content of page-->
   <main class="main">
     <h1 class="main__title">About me</h1>
     <div class="main__imgContainer">
@@ -167,6 +175,8 @@
   </footer>
 </body>
 
+<!--JS scripts-->
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/me.js"></script>
+
 </html>

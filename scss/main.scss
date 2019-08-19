@@ -79,34 +79,6 @@ a{
   }
 }
 
-.main {
-  width: 100%;
-
-  &__img {
-    transition: all 0.5s;
-    height: 50vh;
-    border-radius: 10%;
-    display: block;
-    margin: 0 auto;
-    &--gone {
-      height: 0;
-    }
-  }
-
-  &__imgContainer {
-    height: 50vh;
-  }
-
-  &__title {
-    text-transform: uppercase;
-    color: #071a46;
-    font-family: 'Exodar', sans-serif;
-    text-align: center;
-    margin: 1rem 0;
-    font-size: 2.5rem;
-  }
-}
-
 .nav {
   background: #071a46;
   display: flex;

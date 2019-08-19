@@ -2,127 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/projects.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/projects.css">
+  <title>CM Portfolio</title>
+  <meta name="description" content="CM's portfolio to show his skills and technological habilities" />
+  <meta name="author" content="Carlos Mario Sarmiento Pinilla" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/ico" href="../images/favicon.ico">
+  <title>Document</title>
 </head>
 
 <body>
+  <!--Backdrop is used to close the side nav when mobile-->
+  <div class="backdrop"></div>
+  <!--Header and nav for navigation-->
+  <header>
+    <nav class="nav">
+      <img src="/icons/hamburger.svg" alt="hamburger menu" class="nav__hamburger">
+      <div class="nav__left">
+        <a class="nav__link nav__link--main" href="../index.html">CARLOS M</a>
+      </div>
+      <div class="nav__right">
+        <a class="nav__link" href="../index.html">Me</a>
+        <a class="nav__link nav__link--selected" href="./projects.html">Projects</a>
+        <a class="nav__link" href="./skills.html">Skills</a>
+      </div>
+    </nav>
+  </header>
+  <!--Side nav for mobile navigation-->
+  <aside class="sideNav">
+    <div class="sideNav__list">
+      <a class="sideNav__link" href="../index.html">Me</a>
+      <a class="sideNav__link sideNav__link--selected" href="./projects.html">Projects</a>
+      <a class="sideNav__link" href="./skills.html">Skills</a>
+    </div>
+  </aside>
 
-    <div class="backdrop" onclick="closeSideNav()"></div>
-    <header>
-        <nav class="nav">
-            <img src="/icons/hamburger.svg" alt="hamburger menu" class="nav__hamburger" onclick="openSideNav()">
-            <div class="nav__left">
-                <a class="nav__link nav__link--main" href="../index.html">CARLOS M</a>
-            </div>
-            <div class="nav__right">
-                <a class="nav__link" href="../index.html">Me</a>
-                <a class="nav__link nav__link--selected" href="./projects.html">Projects</a>
-                <a class="nav__link" href="./skills.html">Skills</a>
-            </div>
-        </nav>
-    </header>
-    <aside class="sideNav">
-        <div class="sideNav__list">
-            <a class="sideNav__link" href="../index.html">Me</a>
-            <a class="sideNav__link sideNav__link--selected" href="./projects.html">Projects</a>
-            <a class="sideNav__link" href="./skills.html">Skills</a>
-        </div>
-    </aside>
-    <main class="main">
-        <h1 class="main__title">Projects</h1>
-        <div class="projects">
-            <div class="projects__content">
-                <div class="projects__container projects__container--systems">
-                    <div class="projects__nameContainer" onclick="toggleSystems()">
-                        <img src="/icons/folderSystems.svg" alt="system projects folder"
-                            class="projects__folderIcon projects__folderIcon--systems">
-                        <img src="/icons/folderOpenSystems.svg" alt="system projects folder"
-                            class="projects__folderIcon projects__folderIcon--systemsOpen">
-                        <h2 class="projects__name">Systems</h2>
-                    </div>
-                    <div class="projects__list projects__list--systems">
-                        <ul>
-                            <li>
-                                <p class="projects__item" id="project1" onclick="openProject(this.id)">Grupos</p>
-                            </li>
-                            <li>
-                                <p class="projects__item" id="project2" onclick="openProject(this.id)">Yale</p>
-                            </li>
-                            <li>
-                                <p class="projects__item" id="project3" onclick="openProject(this.id)">OwO</p>
-                            </li>
-                            <li>
-                                <p class="projects__item" id="project4" onclick="openProject(this.id)">GM</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="projects__container projects__container--electronics">
-                    <div class="projects__nameContainer" onclick="toggleElectronics()">
-                        <img src="/icons/folderElectronics.svg" alt="system projects folder"
-                            class="projects__folderIcon projects__folderIcon--electronics">
-                        <img src="/icons/folderOpenElectronics.svg" alt="system projects folder"
-                            class="projects__folderIcon projects__folderIcon--electronicsOpen">
-                        <h2 class="projects__name">Electronics</h2>
-                    </div>
-                    <div class="projects__list projects__list--electronics">
-                        <ul>
-                            <li>
-                                <p class="projects__item" id="project5" onclick="openProject(this.id)">Podometer</p>
-                            </li>
-                            <li>
-                                <p class="projects__item" id="project6" onclick="openProject(this.id)">Yale</p>
-                            </li>
-                            <li>
-                                <p class="projects__item" id="project7" onclick="openProject(this.id)">Thermostated Bath
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!--Main content of page-->
+  <main class="main">
+    <h1 class="main__title">Projects</h1>
+    <div class="projects">
+      <div class="projects__content">
 
-            <div class="project">
-                <h3 class="project__name"></h3>
-                <p class="project__description"></p>
-                <img class="project__img" alt="project picture">
-                <a class="project__link" target="_blank"></a>
-            </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__left">
-            <a href="https://www.facebook.com/korkies22" class="footer__icon--link" target="_blank">
-                <img src="/icons/facebook.svg" alt="facebook icon" class="footer__icon">
-            </a>
-            <a href="https://twitter.com/korkies22" class="footer__icon--link" target="_blank">
-                <img src="/icons/twitter.svg" alt="twitter icon" class="footer__icon">
-            </a>
-            <a href="https://github.com/korkies22" class="footer__icon--link" target="_blank">
-                <img src="/icons/github.svg" alt="github icon" class="footer__icon">
-            </a>
+        <!--First projects: System engineering projects-->
+        <div class="projects__container projects__container--systems">
+          <div class="projects__nameContainer projects__nameContainer--systems">
+            <img src="/icons/folderSystems.svg" alt="system projects folder"
+              class="projects__folderIcon projects__folderIcon--systems">
+            <img src="/icons/folderOpenSystems.svg" alt="system projects folder"
+              class="projects__folderIcon projects__folderIcon--systemsOpen">
+            <h2 class="projects__name">Systems</h2>
+          </div>
+          <div class="projects__list projects__list--systems">
+            <ul>
+              <li>
+                <p class="projects__item" id="project1" onclick="openProject(this.id)">Grupos</p>
+              </li>
+              <li>
+                <p class="projects__item" id="project2" onclick="openProject(this.id)">Yale</p>
+              </li>
+              <li>
+                <p class="projects__item" id="project3" onclick="openProject(this.id)">OwO</p>
+              </li>
+              <li>
+                <p class="projects__item" id="project4" onclick="openProject(this.id)">GM</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__right">
-            <p class="footer__text">Credits: Exodar font found in <a class="footer__link"
-                    href="https://creativetacos.com/exodar-sans-serif-font/">https://creativetacos.com/exodar-sans-serif-font/</a>
-            </p>
-            <p class="footer__text">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-                    class="footer__link" target="_blank">Freepik</a>
-                from <a href="https://www.flaticon.com/" title="Flaticon" class="footer__link">www.flaticon.com</a> is
-                licensed
-                by
-                <a class="footer__link" href="http://creativecommons.org/licenses/by/3.0/"
-                    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-            </p>
+
+        <!--Second projects: Electronic engineering projects-->
+        <div class="projects__container projects__container--electronics">
+          <div class="projects__nameContainer projects__nameContainer--electronics" onclick="toggleElectronics()">
+            <img src="/icons/folderElectronics.svg" alt="system projects folder"
+              class="projects__folderIcon projects__folderIcon--electronics">
+            <img src="/icons/folderOpenElectronics.svg" alt="system projects folder"
+              class="projects__folderIcon projects__folderIcon--electronicsOpen">
+            <h2 class="projects__name">Electronics</h2>
+          </div>
+          <div class="projects__list projects__list--electronics">
+            <ul>
+              <li>
+                <p class="projects__item" id="project5" onclick="openProject(this.id)">Podometer</p>
+              </li>
+              <li>
+                <p class="projects__item" id="project6" onclick="openProject(this.id)">Yale</p>
+              </li>
+              <li>
+                <p class="projects__item" id="project7" onclick="openProject(this.id)">Thermostated Bath
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+
+      <div class="project">
+        <h3 class="project__name"></h3>
+        <p class="project__description"></p>
+        <img class="project__img" alt="project picture">
+        <a class="project__link" target="_blank"></a>
+      </div>
+  </main>
+  <!--Footer for social links and copyright issues-->
+  <footer class="footer">
+    <div class="footer__left">
+      <a href="https://www.facebook.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="../icons/facebook.svg" alt="facebook icon" class="footer__icon">
+      </a>
+      <a href="https://twitter.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="../icons/twitter.svg" alt="twitter icon" class="footer__icon">
+      </a>
+      <a href="https://github.com/korkies22" class="footer__icon--link" target="_blank">
+        <img src="../icons/github.svg" alt="github icon" class="footer__icon">
+      </a>
+    </div>
+    <div class="footer__right">
+      <p class="footer__text">Credits: Exodar font found in <a class="footer__link"
+          href="https://creativetacos.com/exodar-sans-serif-font/">https://creativetacos.com/exodar-sans-serif-font/</a>
+      </p>
+      <p class="footer__text">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          class="footer__link" target="_blank">Freepik</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon" class="footer__link">www.flaticon.com</a> is
+        licensed
+        by
+        <a class="footer__link" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+          target="_blank">CC 3.0 BY</a>
+      </p>
+    </div>
+  </footer>
 </body>
 
+<!--JS scripts-->
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../js/projects.js"></script>
 
