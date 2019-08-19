@@ -1,7 +1,20 @@
+.main {
+  width: 100%;
+}
+
+.main__title {
+  text-transform: uppercase;
+  color: #071a46;
+  font-family: 'Exodar', sans-serif;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
 .projects {
   width: 60%;
   border-radius: 20px;
-  min-height: calc(100vh - 12rem);
+  min-height: calc(100vh - 14rem);
   background: #252526;
   margin: 1rem auto;
   padding: 1rem;
