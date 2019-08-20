@@ -34,6 +34,8 @@ const electronicsNameContainer = document.querySelector(
 systemsNameContainer.addEventListener("click", toggleSystems);
 electronicsNameContainer.addEventListener("click", toggleElectronics);
 
+//Code Review by Andrea Beltrán: When the elements are exchanged, they overlap with the the projects in other devices such as those that can be tested directly in Mozilla Firefox
+
 // Folder with projects of system engineering is opened?
 let systemsOpen = true;
 // Folder with projects of electronics engineering is opened?
