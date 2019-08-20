@@ -153,7 +153,7 @@ function swapProjects() {
   }, 400);
 
   //Starts moving the projects and closes project on top. This happens first
-  firstProject.style.transform = "translateY(3rem)";
+  firstProject.style.transform = "translateY(1rem)";
   secondProject.style.transform = "translateY(-3rem)";
   firstProjectContainer.style["maxHeight"] = "0";
 }
