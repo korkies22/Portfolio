@@ -12,6 +12,7 @@
   &__options {
     margin: 2rem auto 0 auto;
     text-align: center;
+    margin-top: 310px;
   }
 
   &__button {
@@ -37,12 +38,12 @@
   flex-shrink: 0;
   position: relative;
   transition-property: transform;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  border:1px solid #071a46;
+  border: 1px solid #071a46;
   border-radius: 5px;
-  padding:1rem;
+  padding: 1rem;
 
   &__img {
     max-width: calc(300px - 2rem);
@@ -52,8 +53,8 @@
 
   &__link {
     display: inline-block;
-    height:calc(300px - 2rem);
-    display:flex;
+    height: calc(300px - 2rem);
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -78,7 +79,7 @@
     font-size: 2.5rem;
   }
 
-  &__subtitle{
+  &__subtitle {
     text-transform: uppercase;
     color: #071a46;
     text-align: center;
@@ -90,9 +91,22 @@
   padding-top: 50px;
   padding-bottom: 50px;
   perspective: 1200px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   list-style: none;
   z-index: 1;
+
+  &__container {
+    position: absolute;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    height: 300px;
+  }
 }

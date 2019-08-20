@@ -21,6 +21,7 @@
 .carousel__options {
   margin: 2rem auto 0 auto;
   text-align: center;
+  margin-top: 310px;
 }
 
 .carousel__button {
@@ -119,10 +120,27 @@
   padding-bottom: 50px;
   -webkit-perspective: 1200px;
           perspective: 1200px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   list-style: none;
   z-index: 1;
+}
+
+.scene__container {
+  position: absolute;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+  height: 300px;
 }
 /*# sourceMappingURL=skills.css.map */
