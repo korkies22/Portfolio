@@ -40,7 +40,7 @@ for (let i = 0; i < cards1.length; i++) {
 
 //The carousel container also needs to be translated 3d so that the appropiate card is at center
 const newRotation = 0.5 * width - 150 - selectedIndex1 * 300
-const newTranslation = width * -0.51114649 + 256.012
+const newTranslation = width * -0.51114649 + 270
 carousel1.style.transform =
   'translateX(' +
   newTranslation +
@@ -73,7 +73,7 @@ function rotateCarousel1() {
   }
   //The carousel container also needs to be translated 3d so that the appropiate card is at center
   const newRotation = 0.5 * width - 150 - selectedIndex1 * 300
-  const newTranslation = width * -0.51114649 + 256.012
+  const newTranslation = width * -0.51114649 + 270
   carousel1.style.transform =
     'translateX(' +
     newTranslation +
@@ -135,7 +135,7 @@ for (let i = 0; i < cards2.length; i++) {
 
 //The carousel container also needs to be translated 3d so that the appropiate card is at center
 const newRotation2 = 0.5 * width - 150
-const newTranslation2 = width * -0.51114649 + 256.012
+const newTranslation2 = width * -0.51114649 + 270
 carousel2.style.transform =
   'translateX(' +
   newTranslation2 +
@@ -168,7 +168,7 @@ function rotateCarousel2() {
   }
   //The carousel container also needs to be translated 3d so that the appropiate card is at center
   const newRotation = 0.5 * width - 150 - selectedIndex2 * 300
-  const newTranslation2 = width * -0.51114649 + 256.012
+  const newTranslation2 = width * -0.51114649 + 270
   carousel2.style.transform =
     'translateX(' +
     newTranslation2 +
@@ -230,7 +230,7 @@ for (let i = 0; i < cards3.length; i++) {
 
 //The carousel container also needs to be translated 3d so that the appropiate card is at center
 const newRotation3 = 0.5 * width - 150
-const newTranslation3 = width * -0.51114649 + 256.012
+const newTranslation3 = width * -0.51114649 + 270
 carousel3.style.transform =
   'translateX(' +
   newTranslation3 +
@@ -263,7 +263,7 @@ function rotateCarousel3() {
   }
   //The carousel container also needs to be translated 3d so that the appropiate card is at center
   const newRotation = 0.5 * width - 150 - selectedIndex3 * 300
-  const newTranslation3 = width * -0.51114649 + 256.012
+  const newTranslation3 = width * -0.51114649 + 270
   carousel3.style.transform =
     'translateX(' +
     newTranslation3 +
