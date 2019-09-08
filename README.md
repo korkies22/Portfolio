@@ -1,6 +1,6 @@
 # Carlos Mario's (aka korkies22) Personal Web Page
 After developing mainly with front end technologies for a long time, it was time to make my own personal web page. Fortunatelly, development web course from los Andes gave me the opportunity to test my skills with vanilla html, css and js.
-https://github.com/korkies22/Portfolio
+https://korkies22.github.io/Portfolio
 
 <img src="images/mainPagePic.png" alt="main page picture">
 
